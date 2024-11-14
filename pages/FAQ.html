@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -38,14 +42,82 @@
         </ul>
       </div>
     </nav>
-    <header class="jumbotron text-center">
-      <h1 class="display-4">Welcome to the Online Learning Platform</h1>
-      <p class="lead">Your gateway to a world of knowledge and learning.</p>
-      <a class="btn btn-primary btn-lg" href="#" role="button">Sign Up</a>
-      <a class="btn btn-secondary btn-lg" href="#" role="button">Log In</a>
-      <a class="btn btn-success btn-lg" href="#" role="button"
-        >Explore Courses</a
-      >
-    </header>
+
+    <div class="container my-5">
+      <!-- Header -->
+      <h1 class="text-center mb-4">Frequently Asked Questions</h1>
+      <p class="text-center mb-5">Find answers to common questions about our platform below.</p>
+      
+      <!-- FAQ Section with Dropdown Style -->
+      <div class="accordion" id="faqAccordion">
+        
+        <!-- FAQ Item 1 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqHeading1">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="false" aria-controls="faqCollapse1">
+              How do I sign up for the platform?
+            </button>
+          </h2>
+          <div id="faqCollapse1" class="accordion-collapse collapse" aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Go to the homepage and click the "Sign Up" button at the top right. Follow the steps to create an account with your email or social media.
+            </div>
+          </div>
+        </div>
+    
+        <!-- FAQ Item 2 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqHeading2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+              How do I enroll in a course?
+            </button>
+          </h2>
+          <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Once you're logged in, go to the "Courses" page, find a course you’re interested in, and click "Enroll." You’ll be guided through the enrollment process.
+            </div>
+          </div>
+        </div>
+    
+        <!-- FAQ Item 3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqHeading3">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+              I forgot my password. What should I do?
+            </button>
+          </h2>
+          <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Click "Forgot Password" on the login page, and follow the instructions to reset it. If you still have trouble, reach out to support.
+            </div>
+          </div>
+        </div>
+    
+        <!-- FAQ Item 4 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqHeading4">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+              Is there a discount for students or groups?
+            </button>
+          </h2>
+          <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faqHeading4" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Yes, we offer a 20% discount for students and group discounts for teams of 5 or more. Contact us for more details.
+            </div>
+          </div>
+        </div>
+    
+      </div>
+    
+      <!-- Buttons -->
+      <div class="text-center mt-5">
+        <a href="#" class="btn btn-primary me-2">Contact Support</a>
+        <a href="#" class="btn btn-secondary">Submit a Question</a>
+      </div>
+    
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>
