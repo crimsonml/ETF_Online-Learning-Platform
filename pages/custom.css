@@ -1,0 +1,7 @@
+.wallbg{
+    background-image: url("/instructors/wall-3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: auto;
+}
