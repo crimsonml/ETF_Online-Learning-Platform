@@ -11,30 +11,44 @@
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Learning Platform</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+ <!-- Navbar section -->
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Online Learning Platform</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <ul class="navbar-nav me-auto">  <!-- Added 'me-auto' to push content to the left -->
+
+
+                <!-- Links to other pages in the project -->
+                <li class="nav-item">
+                    <a class="nav-link" href="homepage.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Courses</a>
+                    <a class="nav-link" href="courses.html">Courses</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Instructors</a>
+                    <a class="nav-link" href="instructors.html">Instructors</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Enroll</a>
+                    <a class="nav-link" href="dashboard.html">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="FAQ.html">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="contact.html">Contact Us</a>
                 </li>
             </ul>
+            <form class="d-flex ms-auto" role="search">  <!-- Added 'ms-auto' to move form to the right -->
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-dark" type="submit">Search</button>
+            </form>
         </div>
-    </nav>
+    </div>
+</nav>
 
     <!-- Header -->
     <div class="row" style="padding-bottom: 20px;">
@@ -75,7 +89,7 @@
     <div class="row">
         <div class="col-6 col-lg-3">
             <div class="card" style="width: 18rem;margin-bottom: 10px;">
-                <img src="/instructors/instructor-4.jpeg" class="card-img-top" alt="...">
+                <img src="instructors/instructor-4.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title" style="font-weight: bold;"> Dr. Eleanor Blackwood <br> </h4>
                         <h5>Political Science & International Relations.</h5>
@@ -93,7 +107,7 @@
         </div>
         <div class="col-6 col-lg-3">
             <div class="card" style="width: 18rem;margin-bottom: 10px;">
-                <img src="/instructors/instructor-5.jpg" class="card-img-top" alt="...">
+                <img src="instructors/instructor-5.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h4 class="card-title">Professor Samuel Greene 
                         <h5>Economics</h5>
@@ -109,7 +123,7 @@
         </div>
         <div class="col-6 col-lg-3">
             <div class="card" style="width: 18rem;margin-bottom: 10px;">
-                <img src="/instructors/instructor-8.jpeg" class="card-img-top" alt="...">
+                <img src="instructors/instructor-8.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h4 class="card-title">Dr. Priya Ramesh 
                         <h5>Environmental Science & Sustainability</h5>
@@ -124,7 +138,7 @@
         </div>
         <div class="col-6 col-lg-3">
             <div class="card" style="width: 18rem;margin-bottom: 10px;">
-                <img src="/instructors/instructor-3.jpeg" class="card-img-top" alt="...">
+                <img src="instructors/instructor-3.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h4 class="card-title"> Dr. Hugo Laurent  
                         <h5>Artificial Intelligence & Machine Learning</h5>
@@ -140,7 +154,7 @@
         </div>
         <div class="col-6 col-lg-3">
             <div class="card" style="width: 18rem;margin-bottom: 10px;">
-                <img src="/instructors/instructor-2.jpeg" class="card-img-top" alt="...">
+                <img src="instructors/instructor-2.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h4 class="card-title"> Professor Nina Alvarez
                         <h5>Literature & Creative Writing</h5>
@@ -156,7 +170,7 @@
         </div>
         <div class="col-6 col-lg-3">
             <div class="card" style="width: 18rem;margin-bottom: 10px;">
-                <img src="/instructors/instructor-9.jpg" class="card-img-top" alt="...">
+                <img src="instructors/instructor-9.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h4 class="card-title">Dr. Amir Patel  
                         <h5>Cybersecurity & Digital Forensics</h5>
@@ -171,7 +185,7 @@
         </div>
         <div class="col-6 col-lg-3">
             <div class="card" style="width: 18rem;margin-bottom: 10px;">
-                <img src="/instructors/instructor-7.jpeg" class="card-img-top" alt="...">
+                <img src="instructors/instructor-7.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h4 class="card-title">Professor Lucy Chang  
                         <h5>Psychology & Neuroscience</h5>
@@ -187,7 +201,7 @@
         </div>
         <div class="col-6 col-lg-3">
             <div class="card" style="width: 18rem;margin-bottom: 10px;">
-                <img src="/instructors/instructor-6.jpeg" class="card-img-top" alt="...">
+                <img src="instructors/instructor-6.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h4 class="card-title">Dr. Rafael Sosa  
                         <h5>Physics & Astronomy</h5>
@@ -203,7 +217,7 @@
         </div>
         <div class="col-6 col-lg-3">
             <div class="card" style="width: 18rem;margin-bottom: 10px;">
-                <img src="/instructors/instructor-1.jpg" class="card-img-top" alt="...">
+                <img src="instructors/instructor-1.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h4 class="card-title"> Professor Miriam Katz  
                         <h5>Art History & Cultural Studies</h5>
@@ -219,7 +233,7 @@
         </div>
         <div class="col-6 col-lg-3">
             <div class="card" style="width: 18rem;margin-bottom: 10px;">
-                <img src="/instructors/instructor-10.jpg" class="card-img-top" alt="...">
+                <img src="instructors/instructor-10.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h4 class="card-title"> Dr. Li Wei  
                         <h5>Business Analytics & Data Science</h5>
@@ -236,7 +250,7 @@
         </div>
         <div class="col-6 col-lg-3">
             <div class="card" style="width: 18rem;margin-bottom: 10px;">
-                <img src="/instructors/instructor-11.jpeg" class="card-img-top" alt="...">
+                <img src="instructors/instructor-11.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h4 class="card-title"> Professor Ananya Gupta 
                         <h5>Law & Ethics</h5>
@@ -253,7 +267,7 @@
         </div>
         <div class="col-6 col-lg-3">
             <div class="card" style="width: 18rem;margin-bottom: 10px;">
-                <img src="/instructors/instructor-12.jpeg" class="card-img-top" alt="...">
+                <img src="instructors/instructor-12.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h4 class="card-title"> Dr. Thomas Reilly  
                         <h5>History & Anthropology</h5>
