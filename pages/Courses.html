@@ -1,220 +1,387 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Courses</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <style>
-        .course-image {
-            width: 50px;
-            height: 50px;
-            border-radius: 5px;
-        }
+      .course-image {
+        width: 50px;
+        height: 50px;
+        border-radius: 5px;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Learning Platform</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="courses.html">Courses <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="instructors.html">Instructors</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="enroll.html">Enroll</a>
-                </li>
-            </ul>
-        </div>
+      <a class="navbar-brand" href="#">Learning Platform</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="homepage.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Courses.html">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="instructors.html">Instructors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="dashboard.html">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="FAQ.html">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="contactus.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <!-- Page Header -->
     <header class="jumbotron text-center">
-        <h1 class="display-4">Our Courses</h1>
-        <p class="lead">Discover a variety of courses tailored to your learning needs.</p>
+      <h1 class="display-4">Our Courses</h1>
+      <p class="lead">
+        Discover a variety of courses tailored to your learning needs.
+      </p>
     </header>
 
     <!-- Course Table -->
     <div class="container my-4">
-        <h2 class="text-center mb-4">Available Courses</h2>
-        <div class="table-responsive">
-            <table class="table table-bordered table-striped">
-                <thead class="thead-dark">
-                    <tr>
-                        <th>Image</th>
-                        <th>Course Name</th>
-                        <th>Instructor</th>
-                        <th>Duration</th>
-                        <th>Actions</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><img src="images/python.jpg" alt="Python Course" class="course-image"></td>
-                        <td>Introduction to Python</td>
-                        <td>Dr. Hugo Laurent</td>
-                        <td>6 Weeks</td>
-                        <td>
-                            <button class="btn btn-primary btn-sm enroll-btn">Enroll</button>
-                            <button class="btn btn-info btn-sm details-btn" data-details="Learn Python from scratch with practical examples and projects.">Details</button>
-                            <button class="btn btn-success btn-sm share-btn" data-link="https://example.com/courses/python">Share</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/javascript.jpg" alt="JavaScript Course" class="course-image"></td>
-                        <td>Web Development with JavaScript</td>
-                        <td>Professor Lucy Chang</td>
-                        <td>8 Weeks</td>
-                        <td>
-                            <button class="btn btn-primary btn-sm enroll-btn">Enroll</button>
-                            <button class="btn btn-info btn-sm details-btn" data-details="Master JavaScript and build dynamic, responsive websites.">Details</button>
-                            <button class="btn btn-success btn-sm share-btn" data-link="https://example.com/courses/javascript">Share</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/dsa.jpg" alt="Data Structures" class="course-image"></td>
-                        <td>Data Structures and Algorithms</td>
-                        <td>Dr. Priya Ramesh</td>
-                        <td>10 Weeks</td>
-                        <td>
-                            <button class="btn btn-primary btn-sm enroll-btn">Enroll</button>
-                            <button class="btn btn-info btn-sm details-btn" data-details="Understand algorithms and data structures for problem-solving.">Details</button>
-                            <button class="btn btn-success btn-sm share-btn" data-link="https://example.com/courses/data-structures">Share</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/cybersecurity.jpg" alt="Cybersecurity" class="course-image"></td>
-                        <td>Cybersecurity Essentials</td>
-                        <td>Dr. Amir Patel</td>
-                        <td>6 Weeks</td>
-                        <td>
-                            <button class="btn btn-primary btn-sm enroll-btn">Enroll</button>
-                            <button class="btn btn-info btn-sm details-btn" data-details="Learn the basics of cybersecurity to protect digital assets.">Details</button>
-                            <button class="btn btn-success btn-sm share-btn" data-link="https://example.com/courses/cybersecurity">Share</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/software.jpg" alt="Cybersecurity" class="course-image"></td>
-                        <td>Software Engineering Principles</td>
-                        <td>Dr. Priya Ramesh</td>
-                        <td>10 Weeks</td>
-                        <td>
-                            <button class="btn btn-primary btn-sm enroll-btn">Enroll</button>
-                            <button class="btn btn-info btn-sm details-btn" data-details="Explore the principles of software engineering, including design patterns, testing, and project management.">Details</button>
-                            <button class="btn btn-success btn-sm share-btn" data-link="https://example.com/courses/software-eng">Share</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/java.jpg" alt="Cybersecurity" class="course-image"></td>
-                        <td>Introduction to Java</td>
-                        <td>Dr. Amir Patel</td>
-                        <td>8 Weeks</td>
-                        <td>
-                            <button class="btn btn-primary btn-sm enroll-btn">Enroll</button>
-                            <button class="btn btn-info btn-sm details-btn" data-details="Get started with Java programming, covering basic concepts, object-oriented programming, and more.">Details</button>
-                            <button class="btn btn-success btn-sm share-btn" data-link="https://example.com/courses/java">Share</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/cpp.jpg" alt="Cybersecurity" class="course-image"></td>
-                        <td>Advanced C++ Programming</td>
-                        <td>Dr. Priya Ramesh</td>
-                        <td>16 Weeks</td>
-                        <td>
-                            <button class="btn btn-primary btn-sm enroll-btn">Enroll</button>
-                            <button class="btn btn-info btn-sm details-btn" data-details="Dive deep into advanced C++ programming topics, including memory management, templates, and concurrency.">Details</button>
-                            <button class="btn btn-success btn-sm share-btn" data-link="https://example.com/courses/C++ Programming">Share</button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+      <h2 class="text-center mb-4">Available Courses</h2>
+      <div class="table-responsive">
+        <table class="table table-bordered table-striped">
+          <thead class="thead-dark">
+            <tr>
+              <th>Image</th>
+              <th>Course Name</th>
+              <th>Instructor</th>
+              <th>Duration</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <img
+                  src="images/python.jpg"
+                  alt="Python Course"
+                  class="course-image"
+                />
+              </td>
+              <td>Introduction to Python</td>
+              <td>Dr. Hugo Laurent</td>
+              <td>6 Weeks</td>
+              <td>
+                <button class="btn btn-primary btn-sm enroll-btn">
+                  Enroll
+                </button>
+                <button
+                  class="btn btn-info btn-sm details-btn"
+                  data-details="Learn Python from scratch with practical examples and projects."
+                >
+                  Details
+                </button>
+                <button
+                  class="btn btn-success btn-sm share-btn"
+                  data-link="https://example.com/courses/python"
+                >
+                  Share
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img
+                  src="images/javascript.jpg"
+                  alt="JavaScript Course"
+                  class="course-image"
+                />
+              </td>
+              <td>Web Development with JavaScript</td>
+              <td>Professor Lucy Chang</td>
+              <td>8 Weeks</td>
+              <td>
+                <button class="btn btn-primary btn-sm enroll-btn">
+                  Enroll
+                </button>
+                <button
+                  class="btn btn-info btn-sm details-btn"
+                  data-details="Master JavaScript and build dynamic, responsive websites."
+                >
+                  Details
+                </button>
+                <button
+                  class="btn btn-success btn-sm share-btn"
+                  data-link="https://example.com/courses/javascript"
+                >
+                  Share
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img
+                  src="images/dsa.jpg"
+                  alt="Data Structures"
+                  class="course-image"
+                />
+              </td>
+              <td>Data Structures and Algorithms</td>
+              <td>Dr. Priya Ramesh</td>
+              <td>10 Weeks</td>
+              <td>
+                <button class="btn btn-primary btn-sm enroll-btn">
+                  Enroll
+                </button>
+                <button
+                  class="btn btn-info btn-sm details-btn"
+                  data-details="Understand algorithms and data structures for problem-solving."
+                >
+                  Details
+                </button>
+                <button
+                  class="btn btn-success btn-sm share-btn"
+                  data-link="https://example.com/courses/data-structures"
+                >
+                  Share
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img
+                  src="images/cybersecurity.jpg"
+                  alt="Cybersecurity"
+                  class="course-image"
+                />
+              </td>
+              <td>Cybersecurity Essentials</td>
+              <td>Dr. Amir Patel</td>
+              <td>6 Weeks</td>
+              <td>
+                <button class="btn btn-primary btn-sm enroll-btn">
+                  Enroll
+                </button>
+                <button
+                  class="btn btn-info btn-sm details-btn"
+                  data-details="Learn the basics of cybersecurity to protect digital assets."
+                >
+                  Details
+                </button>
+                <button
+                  class="btn btn-success btn-sm share-btn"
+                  data-link="https://example.com/courses/cybersecurity"
+                >
+                  Share
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img
+                  src="images/software.jpg"
+                  alt="Cybersecurity"
+                  class="course-image"
+                />
+              </td>
+              <td>Software Engineering Principles</td>
+              <td>Dr. Priya Ramesh</td>
+              <td>10 Weeks</td>
+              <td>
+                <button class="btn btn-primary btn-sm enroll-btn">
+                  Enroll
+                </button>
+                <button
+                  class="btn btn-info btn-sm details-btn"
+                  data-details="Explore the principles of software engineering, including design patterns, testing, and project management."
+                >
+                  Details
+                </button>
+                <button
+                  class="btn btn-success btn-sm share-btn"
+                  data-link="https://example.com/courses/software-eng"
+                >
+                  Share
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img
+                  src="images/java.jpg"
+                  alt="Cybersecurity"
+                  class="course-image"
+                />
+              </td>
+              <td>Introduction to Java</td>
+              <td>Dr. Amir Patel</td>
+              <td>8 Weeks</td>
+              <td>
+                <button class="btn btn-primary btn-sm enroll-btn">
+                  Enroll
+                </button>
+                <button
+                  class="btn btn-info btn-sm details-btn"
+                  data-details="Get started with Java programming, covering basic concepts, object-oriented programming, and more."
+                >
+                  Details
+                </button>
+                <button
+                  class="btn btn-success btn-sm share-btn"
+                  data-link="https://example.com/courses/java"
+                >
+                  Share
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img
+                  src="images/cpp.jpg"
+                  alt="Cybersecurity"
+                  class="course-image"
+                />
+              </td>
+              <td>Advanced C++ Programming</td>
+              <td>Dr. Priya Ramesh</td>
+              <td>16 Weeks</td>
+              <td>
+                <button class="btn btn-primary btn-sm enroll-btn">
+                  Enroll
+                </button>
+                <button
+                  class="btn btn-info btn-sm details-btn"
+                  data-details="Dive deep into advanced C++ programming topics, including memory management, templates, and concurrency."
+                >
+                  Details
+                </button>
+                <button
+                  class="btn btn-success btn-sm share-btn"
+                  data-link="https://example.com/courses/C++ Programming"
+                >
+                  Share
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
     <!-- Modals -->
     <div id="enrollModal" class="modal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Enroll</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>Do you want to enroll in this course?</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" id="confirmEnroll">Yes</button>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
-                </div>
-            </div>
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Enroll</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Do you want to enroll in this course?</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" id="confirmEnroll">
+              Yes
+            </button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              No
+            </button>
+          </div>
         </div>
+      </div>
     </div>
 
     <div id="detailsModal" class="modal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Course Details</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p id="courseDetailsText"></p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Course Details</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p id="courseDetailsText"></p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
         </div>
+      </div>
     </div>
-
-    
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
-        $(document).ready(function () {
-            $('.enroll-btn').click(function () {
-                $('#enrollModal').modal('show');
-                $('#confirmEnroll').off('click').on('click', function () {
-                    alert('You are enrolled for the course!');
-                    $('#enrollModal').modal('hide');
-                });
-            });
-
-            $('.details-btn').click(function () {
-                const details = $(this).data('details');
-                $('#courseDetailsText').text(details);
-                $('#detailsModal').modal('show');
-            });
-
-            $('.share-btn').click(function () {
-                const link = $(this).data('link');
-                const tempInput = $('<input>');
-                $('body').append(tempInput);
-                tempInput.val(link).select();
-                document.execCommand('copy');
-                tempInput.remove();
-                alert('Link copied to clipboard: ' + link);
+      $(document).ready(function () {
+        $(".enroll-btn").click(function () {
+          $("#enrollModal").modal("show");
+          $("#confirmEnroll")
+            .off("click")
+            .on("click", function () {
+              alert("You are enrolled for the course!");
+              $("#enrollModal").modal("hide");
             });
         });
-    </script>
-</body>
 
+        $(".details-btn").click(function () {
+          const details = $(this).data("details");
+          $("#courseDetailsText").text(details);
+          $("#detailsModal").modal("show");
+        });
+
+        $(".share-btn").click(function () {
+          const link = $(this).data("link");
+          const tempInput = $("<input>");
+          $("body").append(tempInput);
+          tempInput.val(link).select();
+          document.execCommand("copy");
+          tempInput.remove();
+          alert("Link copied to clipboard: " + link);
+        });
+      });
+    </script>
+  </body>
 </html>
